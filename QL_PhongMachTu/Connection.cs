@@ -20,6 +20,5 @@ namespace QL_PhongMachTu
         {
             return new SqlConnection(connectionString);
         }
-
     }
 }

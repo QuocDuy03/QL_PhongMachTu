@@ -65,7 +65,7 @@ namespace QL_PhongMachTu
             this.tongTien = tongTien;
         }
 
-        public string maHoaDon { get; set; }
+        public string maHoaDon { get; set; }    
         public string maPhieuKham { get; set; }
         public int tienKham { get; set; }
         public int tongTien { get; set; }

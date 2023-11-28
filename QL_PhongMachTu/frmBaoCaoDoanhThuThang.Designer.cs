@@ -1,7 +1,4 @@
-﻿using System.Drawing;
-using System.Windows.Forms;
-
-namespace QL_PhongMachTu
+﻿namespace QL_PhongMachTu
 {
     partial class frmBaoCaoDoanhThuThang
     {

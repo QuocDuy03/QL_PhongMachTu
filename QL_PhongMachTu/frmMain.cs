@@ -27,7 +27,7 @@ namespace QL_PhongMachTu
                 tipAdmin.Enabled = false;
                 tipLapBaoCao.Enabled = false;
                 btnLapBaoCao.Enabled = false;
-                btnLapBaoCao.ForeColor = Color.Black;
+                btnLapBaoCao.ForeColor = Color.White;
                 btnLapBaoCao.BackColor = Color.LightSlateGray;
             }
             tipTaiKhoan.Text = "Tài Khoản (" + TaiKhoan.tenDangNhap.Trim() + ")";
@@ -169,6 +169,11 @@ namespace QL_PhongMachTu
             frmBaoCaoDoanhThuThang fBaoCaoDoanhThuThang = new frmBaoCaoDoanhThuThang();
             fBaoCaoDoanhThuThang.Show();
             this.Close();
+        }
+
+        private void picQLThuoc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

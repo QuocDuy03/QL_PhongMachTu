@@ -17,9 +17,9 @@ namespace QL_PhongMachTu
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select GiaTri from THAMSO where TenThamSo = 'TienKhamCoBan'";
             cmd.Connection = con;
-            object tienKham = cmd.ExecuteScalar();
+            object tienKham = cmd.ExecuteScalar(); 
             con.Close();
-            return Convert.ToInt32(tienKham);
+            return Convert.ToInt32(tienKham);           
         }
 
         public static int getBenhNhanToiDa()
