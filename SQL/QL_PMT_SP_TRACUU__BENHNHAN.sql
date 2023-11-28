@@ -3,7 +3,7 @@ go
 
 ----tra cứu bệnh nhân
 -- Tìm kiếm thông tin bệnh nhân theo các trường dữ liệu input 
-ALTER proc spTraCuuBenhNhan
+CREATE proc spTraCuuBenhNhan
 @HoTen nvarchar(40),
 @GioiTinh char(3),
 @NamSinh varchar(4),

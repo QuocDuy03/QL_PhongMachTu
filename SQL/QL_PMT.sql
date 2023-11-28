@@ -177,103 +177,105 @@ add constraint fk_nd_mn FOREIGN KEY(MaNhom) references NHOMNGUOIDUNG(MaNhom)
 go
 -- chèn data vào các bảng
 -- Có 5 loại bệnh cơ bản
-insert into LOAIBENH(MaLB, TenLB) values('LB001', N'Loại bệnh A');
-insert into LOAIBENH(MaLB, TenLB) values('LB002', N'Loại bệnh B');
-insert into LOAIBENH(MaLB, TenLB) values('LB003', N'Loại bệnh C');
-insert into LOAIBENH(MaLB, TenLB) values('LB004', N'Loại bệnh D');
-insert into LOAIBENH(MaLB, TenLB) values('LB005', N'Loại bệnh E');
+insert into LOAIBENH(MaLB, TenLB) values('LB001', N'Cảm cúm');
+insert into LOAIBENH(MaLB, TenLB) values('LB002', N'Sốt xuất huyết');
+insert into LOAIBENH(MaLB, TenLB) values('LB003', N'Viêm xoang');
+insert into LOAIBENH(MaLB, TenLB) values('LB004', N'Đau bụng');
+insert into LOAIBENH(MaLB, TenLB) values('LB005', N'Rối loạn tiêu hóa');
 go
 
--- Có 2 loại đơn vị (viên , chai)
+-- Có 4 loại đơn vị
 insert into DONVI(MaDV, TenDV) values ('DV001', N'viên');
-insert into DONVI(MaDV, TenDV) values ('DV002', N'chai');
+insert into DONVI(MaDV, TenDV) values ('DV002', N'ống');
+insert into DONVI(MaDV, TenDV) values ('DV003', N'gói');
+insert into DONVI(MaDV, TenDV) values ('DV004', N'tuýp');
 go
 
--- Có 4 loại cách dùng (1,2,3,4)
-insert into CACHDUNG(MaCD, TenCD) values('CD001' , N'1');
-insert into CACHDUNG(MaCD, TenCD) values('CD002' , N'2');
-insert into CACHDUNG(MaCD, TenCD) values('CD003' , N'3');
-insert into CACHDUNG(MaCD, TenCD) values('CD004' , N'4');
+-- Có 4 loại cách dùng
+insert into CACHDUNG(MaCD, TenCD) values('CD001' , N'uống');
+insert into CACHDUNG(MaCD, TenCD) values('CD002' , N'thoa ngoài da');
+insert into CACHDUNG(MaCD, TenCD) values('CD003' , N'hít');
+insert into CACHDUNG(MaCD, TenCD) values('CD004' , N'tiêm');
 go
 
 -- Có 30 loại thuốc
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT001', N'Levothyroxine', 'DV001', 'CD002' , 0 , 0 , 15000);
+values ('LT001', N'Levothyroxine', 'DV001', 'CD001' , 0 , 0 , 15000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT002', N'Memantine', 'DV001', 'CD003' , 0 , 0 , 20000);
+values ('LT002', N'Memantine', 'DV001', 'CD001' , 0 , 0 , 20000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
 values ('LT003', N'Eszopiclone', 'DV002', 'CD004' , 0 , 0 , 50000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT004', N'Varenicline', 'DV002', 'CD001' , 0 , 0 , 20000);
+values ('LT004', N'Varenicline', 'DV002', 'CD004' , 0 , 0 , 20000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT005', N'Amlodipine', 'DV001', 'CD003' , 0 , 0 , 100000);
+values ('LT005', N'Amlodipine', 'DV001', 'CD001' , 0 , 0 , 100000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT006', N'Oxybutynin', 'DV001', 'CD002' , 0 , 0 , 60000);
+values ('LT006', N'Oxybutynin', 'DV001', 'CD001' , 0 , 0 , 60000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT007', N'Ondansetron', 'DV002', 'CD004' , 0 , 0 , 50000);
+values ('LT007', N'Ondansetron', 'DV001', 'CD001' , 0 , 0 , 50000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT008', N'Fluconazole', 'DV002', 'CD001' , 0 , 0 , 20000);
+values ('LT008', N'Fluconazole', 'DV002', 'CD004' , 0 , 0 , 20000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT009', N'Trazodone', 'DV001', 'CD002' , 0 , 0 , 30000);
+values ('LT009', N'Trazodone', 'DV001', 'CD001' , 0 , 0 , 30000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT010', N'Omeprazole', 'DV002', 'CD003' , 0 , 0 , 40000);
+values ('LT010', N'Omeprazole', 'DV002', 'CD004' , 0 , 0 , 40000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT011', N'Potassium', 'DV002', 'CD004' , 0 , 0 , 40000);
+values ('LT011', N'Potassium', 'DV004', 'CD002' , 0 , 0 , 40000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT012', N'Metformin', 'DV001', 'CD003' , 0 , 0 , 20000);
+values ('LT012', N'Metformin', 'DV001', 'CD001' , 0 , 0 , 20000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT013', N'Insulin', 'DV002', 'CD001' , 0 , 0 , 80000);
+values ('LT013', N'Insulin', 'DV002', 'CD004' , 0 , 0 , 80000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT014', N'Montelukast', 'DV002', 'CD002' , 0 , 0 , 50000);
+values ('LT014', N'Montelukast', 'DV004', 'CD002' , 0 , 0 , 50000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT015', N'Losartan', 'DV001', 'CD003' , 0 , 0 , 30000);
+values ('LT015', N'Losartan', 'DV002', 'CD003' , 0 , 0 , 30000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
 values ('LT016', N'Hydralazine', 'DV002', 'CD004' , 0 , 0 , 40000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT017', N'Propranolol', 'DV002', 'CD002' , 0 , 0 , 70000);
+values ('LT017', N'Propranolol', 'DV002', 'CD004' , 0 , 0 , 70000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT018', N'Estrogen', 'DV001', 'CD003' , 0 , 0 , 50000);
+values ('LT018', N'Estrogen', 'DV002', 'CD003' , 0 , 0 , 50000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT019', N'Lorcaserin', 'DV002', 'CD001' , 0 , 0 , 30000);
+values ('LT019', N'Lorcaserin', 'DV002', 'CD004' , 0 , 0 , 30000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT020', N'Phentermine', 'DV001', 'CD002' , 0 , 0 , 150000);
+values ('LT020', N'Phentermine', 'DV001', 'CD001' , 0 , 0 , 150000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
 values ('LT021', N'Tramadol', 'DV002', 'CD004' , 0 , 0 , 90000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT022', N'Phentermine', 'DV001', 'CD003' , 0 , 0 , 25000);
+values ('LT022', N'Phentermine', 'DV002', 'CD003' , 0 , 0 , 25000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT023', N'Benzonatate', 'DV002', 'CD001' , 0 , 0 , 36000);
+values ('LT023', N'Benzonatate', 'DV002', 'CD004' , 0 , 0 , 36000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT024', N'Baclofen', 'DV001', 'CD004' , 0 , 0 , 45000);
+values ('LT024', N'Baclofen', 'DV001', 'CD001' , 0 , 0 , 45000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT025', N'Tizanidine', 'DV002', 'CD002' , 0 , 0 , 80000);
+values ('LT025', N'Tizanidine', 'DV002', 'CD004' , 0 , 0 , 80000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT026', N'Dicyclomine', 'DV002', 'CD001' , 0 , 0 , 60000);
+values ('LT026', N'Dicyclomine', 'DV002', 'CD004' , 0 , 0 , 60000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
 values ('LT027', N'Linaclotide', 'DV001', 'CD001' , 0 , 0 , 32000);
@@ -282,18 +284,18 @@ insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGi
 values ('LT028', N'Allopurinol', 'DV001', 'CD001' , 0 , 0 , 18000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT029', N'Simvastatin', 'DV002', 'CD003' , 0 , 0 , 90000);
+values ('LT029', N'Simvastatin', 'DV002', 'CD004' , 0 , 0 , 90000);
 
 insert into LOAITHUOC(MaLT , TenLT , MaDV , MaCD , SoLuongTon, DonGiaNhap, DonGiaBan) 
-values ('LT030', N'Ezetimibe', 'DV001', 'CD004' , 0 , 0 , 60000);
+values ('LT030', N'Ezetimibe', 'DV001', 'CD001' , 0 , 0 , 60000);
 
 -- Thêm các tham số
 insert into THAMSO(TenThamSo , GiaTri) values (N'SoBenhNhanToiDa' , 40);
-insert into THAMSO(TenThamSo , GiaTri) values (N'TienKhamCoBan' , 30000);
+insert into THAMSO(TenThamSo , GiaTri) values (N'TienKhamCoBan' , 50000);
 
 -- Tạo account cho user và admin
 insert into NHOMNGUOIDUNG (MaNhom , TenNhom) values ('1' , 'admin');
 insert into NHOMNGUOIDUNG (MaNhom , TenNhom) values ('2' , 'user');
 
-insert into NGUOIDUNG (TenDangNhap , MatKhau , MaNhom) values ('admin' , '123' , '1');
-insert into NGUOIDUNG (TenDangNhap , MatKhau , MaNhom) values ('user' , '456' , '2');
+insert into NGUOIDUNG (TenDangNhap , MatKhau , MaNhom) values ('admin' , '12345678' , '1');
+insert into NGUOIDUNG (TenDangNhap , MatKhau , MaNhom) values ('user' , '87654321' , '2');
