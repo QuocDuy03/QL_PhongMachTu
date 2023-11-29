@@ -17,7 +17,19 @@ namespace QL_PhongMachTu
             InitializeComponent();
             this.ControlBox = false;
         }
-
+        private void frmMenuQuanLyThuoc_Load(object sender, EventArgs e)
+        {
+            // khi load form tùy loại người dùng để ẩn hiện các chức năng 
+            // user thường không được dùng chức năng Lập Phiếu Nhập Thuốc
+            if (TaiKhoan.loaiTaiKhoan == 2)
+            {
+               
+                button1.Enabled = false;
+                button1.ForeColor = Color.White;
+                button1.BackColor = Color.LightSlateGray;
+            }
+           
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             frmQuanLyThuoc QuanLyThuoc = new frmQuanLyThuoc();
@@ -50,5 +62,7 @@ namespace QL_PhongMachTu
             fMain.Show();
             this.Close();
         }
+
+       
     }
 }
