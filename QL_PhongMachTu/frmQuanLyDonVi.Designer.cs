@@ -53,9 +53,8 @@
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(964, 58);
+            label1.Size = new Size(675, 35);
             label1.TabIndex = 0;
             label1.Text = "Quản Lý Đơn Vị";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -67,10 +66,10 @@
             btnThoat.Cursor = Cursors.Hand;
             btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(604, 502);
-            btnThoat.Margin = new Padding(4);
+            btnThoat.Location = new Point(423, 301);
+            btnThoat.Margin = new Padding(3, 2, 3, 2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(350, 59);
+            btnThoat.Size = new Size(245, 35);
             btnThoat.TabIndex = 15;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
@@ -82,10 +81,10 @@
             btnSua.Cursor = Cursors.Hand;
             btnSua.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(608, 414);
-            btnSua.Margin = new Padding(4);
+            btnSua.Location = new Point(426, 248);
+            btnSua.Margin = new Padding(3, 2, 3, 2);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(160, 74);
+            btnSua.Size = new Size(112, 44);
             btnSua.TabIndex = 14;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
@@ -97,10 +96,10 @@
             btnXoa.Cursor = Cursors.Hand;
             btnXoa.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(798, 314);
-            btnXoa.Margin = new Padding(4);
+            btnXoa.Location = new Point(559, 188);
+            btnXoa.Margin = new Padding(3, 2, 3, 2);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(160, 74);
+            btnXoa.Size = new Size(112, 44);
             btnXoa.TabIndex = 13;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
@@ -112,10 +111,10 @@
             btnThem.Cursor = Cursors.Hand;
             btnThem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(608, 314);
-            btnThem.Margin = new Padding(4);
+            btnThem.Location = new Point(426, 188);
+            btnThem.Margin = new Padding(3, 2, 3, 2);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(160, 74);
+            btnThem.Size = new Size(112, 44);
             btnThem.TabIndex = 12;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
@@ -125,11 +124,11 @@
             // 
             grbDanhSachTaiKhoan.Controls.Add(dvwDanhSachDonVi);
             grbDanhSachTaiKhoan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            grbDanhSachTaiKhoan.Location = new Point(15, 251);
-            grbDanhSachTaiKhoan.Margin = new Padding(4);
+            grbDanhSachTaiKhoan.Location = new Point(10, 151);
+            grbDanhSachTaiKhoan.Margin = new Padding(3, 2, 3, 2);
             grbDanhSachTaiKhoan.Name = "grbDanhSachTaiKhoan";
-            grbDanhSachTaiKhoan.Padding = new Padding(4);
-            grbDanhSachTaiKhoan.Size = new Size(581, 310);
+            grbDanhSachTaiKhoan.Padding = new Padding(3, 2, 3, 2);
+            grbDanhSachTaiKhoan.Size = new Size(407, 186);
             grbDanhSachTaiKhoan.TabIndex = 16;
             grbDanhSachTaiKhoan.TabStop = false;
             grbDanhSachTaiKhoan.Text = "Danh Sách Đơn Vị";
@@ -140,8 +139,8 @@
             dvwDanhSachDonVi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dvwDanhSachDonVi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dvwDanhSachDonVi.Dock = DockStyle.Fill;
-            dvwDanhSachDonVi.Location = new Point(4, 32);
-            dvwDanhSachDonVi.Margin = new Padding(4);
+            dvwDanhSachDonVi.Location = new Point(3, 21);
+            dvwDanhSachDonVi.Margin = new Padding(3, 2, 3, 2);
             dvwDanhSachDonVi.Name = "dvwDanhSachDonVi";
             dvwDanhSachDonVi.ReadOnly = true;
             dvwDanhSachDonVi.RowHeadersWidth = 51;
@@ -151,7 +150,7 @@
             dvwDanhSachDonVi.RowTemplate.DefaultCellStyle.SelectionForeColor = SystemColors.Window;
             dvwDanhSachDonVi.RowTemplate.Height = 29;
             dvwDanhSachDonVi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dvwDanhSachDonVi.Size = new Size(573, 274);
+            dvwDanhSachDonVi.Size = new Size(401, 163);
             dvwDanhSachDonVi.TabIndex = 0;
             dvwDanhSachDonVi.CellClick += dvwDanhSachTaiKhoan_CellClick;
             // 
@@ -162,11 +161,11 @@
             groupBox1.Controls.Add(txtMaDonVi);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(15, 69);
-            groupBox1.Margin = new Padding(4);
+            groupBox1.Location = new Point(10, 41);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(934, 186);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(654, 112);
             groupBox1.TabIndex = 17;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập Đơn Vị";
@@ -175,31 +174,30 @@
             // 
             txtTenDonVi.BackColor = SystemColors.Menu;
             txtTenDonVi.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTenDonVi.Location = new Point(569, 110);
-            txtTenDonVi.Margin = new Padding(4);
+            txtTenDonVi.Location = new Point(398, 66);
+            txtTenDonVi.Margin = new Padding(3, 2, 3, 2);
             txtTenDonVi.Name = "txtTenDonVi";
-            txtTenDonVi.Size = new Size(288, 39);
+            txtTenDonVi.Size = new Size(203, 29);
             txtTenDonVi.TabIndex = 3;
             // 
             // txtMaDonVi
             // 
             txtMaDonVi.BackColor = SystemColors.ControlLight;
             txtMaDonVi.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtMaDonVi.Location = new Point(39, 110);
-            txtMaDonVi.Margin = new Padding(4);
+            txtMaDonVi.Location = new Point(27, 66);
+            txtMaDonVi.Margin = new Padding(3, 2, 3, 2);
             txtMaDonVi.Name = "txtMaDonVi";
             txtMaDonVi.ReadOnly = true;
-            txtMaDonVi.Size = new Size(288, 39);
+            txtMaDonVi.Size = new Size(203, 29);
             txtMaDonVi.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(569, 44);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(398, 26);
             label3.Name = "label3";
-            label3.Size = new Size(161, 38);
+            label3.Size = new Size(109, 25);
             label3.TabIndex = 1;
             label3.Text = "Tên Đơn Vị";
             // 
@@ -207,10 +205,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(39, 44);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(27, 26);
             label2.Name = "label2";
-            label2.Size = new Size(158, 38);
+            label2.Size = new Size(106, 25);
             label2.TabIndex = 0;
             label2.Text = "Mã Đơn Vị";
             // 
@@ -220,10 +217,10 @@
             btnReset.Cursor = Cursors.Hand;
             btnReset.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(798, 414);
-            btnReset.Margin = new Padding(4);
+            btnReset.Location = new Point(559, 248);
+            btnReset.Margin = new Padding(3, 2, 3, 2);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(160, 74);
+            btnReset.Size = new Size(112, 44);
             btnReset.TabIndex = 18;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
@@ -231,10 +228,11 @@
             // 
             // frmQuanLyDonVi
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(964, 576);
+            ClientSize = new Size(675, 346);
             Controls.Add(btnReset);
             Controls.Add(groupBox1);
             Controls.Add(grbDanhSachTaiKhoan);
@@ -243,7 +241,7 @@
             Controls.Add(btnXoa);
             Controls.Add(btnThem);
             Controls.Add(label1);
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmQuanLyDonVi";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Quản Lý Đơn Vị";

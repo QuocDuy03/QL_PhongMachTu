@@ -51,7 +51,7 @@
             lblTitle.ForeColor = Color.Teal;
             lblTitle.Location = new Point(226, 22);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(552, 45);
+            lblTitle.Size = new Size(370, 30);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "THAY ĐỔI THÔNG TIN TÀI KHOẢN";
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
@@ -63,7 +63,7 @@
             lblTenDangNhap.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTenDangNhap.Location = new Point(68, 125);
             lblTenDangNhap.Name = "lblTenDangNhap";
-            lblTenDangNhap.Size = new Size(197, 32);
+            lblTenDangNhap.Size = new Size(132, 21);
             lblTenDangNhap.TabIndex = 1;
             lblTenDangNhap.Text = "Tên Đăng Nhập:";
             // 
@@ -73,7 +73,7 @@
             lblMatKhau.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblMatKhau.Location = new Point(68, 192);
             lblMatKhau.Name = "lblMatKhau";
-            lblMatKhau.Size = new Size(131, 32);
+            lblMatKhau.Size = new Size(87, 21);
             lblMatKhau.TabIndex = 2;
             lblMatKhau.Text = "Mật Khẩu:";
             // 
@@ -83,7 +83,7 @@
             lblMatKhauMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblMatKhauMoi.Location = new Point(68, 255);
             lblMatKhauMoi.Name = "lblMatKhauMoi";
-            lblMatKhauMoi.Size = new Size(183, 32);
+            lblMatKhauMoi.Size = new Size(121, 21);
             lblMatKhauMoi.TabIndex = 3;
             lblMatKhauMoi.Text = "Mật Khẩu Mới:";
             // 
@@ -93,7 +93,7 @@
             lblXacNhanMatKhauMoi.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblXacNhanMatKhauMoi.Location = new Point(68, 310);
             lblXacNhanMatKhauMoi.Name = "lblXacNhanMatKhauMoi";
-            lblXacNhanMatKhauMoi.Size = new Size(290, 32);
+            lblXacNhanMatKhauMoi.Size = new Size(193, 21);
             lblXacNhanMatKhauMoi.TabIndex = 4;
             lblXacNhanMatKhauMoi.Text = "Nhập Lại Mật Khẩu Mới:";
             // 
@@ -131,7 +131,7 @@
             txtTenDangNhap.Location = new Point(367, 125);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.ReadOnly = true;
-            txtTenDangNhap.Size = new Size(460, 39);
+            txtTenDangNhap.Size = new Size(460, 29);
             txtTenDangNhap.TabIndex = 7;
             // 
             // txtMatKhau
@@ -140,7 +140,7 @@
             txtMatKhau.Location = new Point(367, 192);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PasswordChar = '*';
-            txtMatKhau.Size = new Size(460, 39);
+            txtMatKhau.Size = new Size(460, 29);
             txtMatKhau.TabIndex = 8;
             txtMatKhau.TextChanged += txtMatKhau_TextChanged;
             // 
@@ -150,7 +150,7 @@
             txtMatKhauMoi.Location = new Point(367, 253);
             txtMatKhauMoi.Name = "txtMatKhauMoi";
             txtMatKhauMoi.PasswordChar = '*';
-            txtMatKhauMoi.Size = new Size(460, 39);
+            txtMatKhauMoi.Size = new Size(460, 29);
             txtMatKhauMoi.TabIndex = 9;
             txtMatKhauMoi.TextChanged += txtMatKhauMoi_TextChanged;
             // 
@@ -160,7 +160,7 @@
             txtXacNhanMatKhau.Location = new Point(367, 310);
             txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
             txtXacNhanMatKhau.PasswordChar = '*';
-            txtXacNhanMatKhau.Size = new Size(460, 39);
+            txtXacNhanMatKhau.Size = new Size(460, 29);
             txtXacNhanMatKhau.TabIndex = 10;
             txtXacNhanMatKhau.TextChanged += txtXacNhanMatKhau_TextChanged;
             // 
@@ -170,8 +170,9 @@
             // 
             // frmThayDoiThongTin
             // 
-            AutoScaleDimensions = new SizeF(11F, 28F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(906, 490);
             Controls.Add(txtXacNhanMatKhau);

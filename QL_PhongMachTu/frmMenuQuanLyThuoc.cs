@@ -28,13 +28,13 @@ namespace QL_PhongMachTu
         private void button3_Click(object sender, EventArgs e)
         {
             frmQuanLyDonVi QLDonVi = new frmQuanLyDonVi();
-            QLDonVi.ShowDialog();           
+            QLDonVi.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             frmQuanLyCachDung QLCachDung = new frmQuanLyCachDung();
-            QLCachDung.ShowDialog();            
+            QLCachDung.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

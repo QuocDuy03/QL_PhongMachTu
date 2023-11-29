@@ -99,6 +99,7 @@ namespace QL_PhongMachTu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             ClientSize = new Size(591, 246);
             ControlBox = false;
             Controls.Add(btnThoat);

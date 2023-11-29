@@ -74,7 +74,7 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(19, 53);
             label2.Name = "label2";
-            label2.Size = new Size(127, 32);
+            label2.Size = new Size(85, 21);
             label2.TabIndex = 1;
             label2.Text = "Mã Thuốc";
             label2.Click += label2_Click;
@@ -85,7 +85,7 @@
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(19, 139);
             label3.Name = "label3";
-            label3.Size = new Size(131, 32);
+            label3.Size = new Size(88, 21);
             label3.TabIndex = 2;
             label3.Text = "Tên Thuốc";
             // 
@@ -95,7 +95,7 @@
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(19, 225);
             label4.Name = "label4";
-            label4.Size = new Size(92, 32);
+            label4.Size = new Size(62, 21);
             label4.TabIndex = 3;
             label4.Text = "Đơn Vị";
             // 
@@ -105,7 +105,7 @@
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(19, 397);
             label5.Name = "label5";
-            label5.Size = new Size(101, 32);
+            label5.Size = new Size(68, 21);
             label5.TabIndex = 4;
             label5.Text = "Giá Bán";
             // 
@@ -172,7 +172,7 @@
             txtMaThuoc.Location = new Point(149, 51);
             txtMaThuoc.Name = "txtMaThuoc";
             txtMaThuoc.ReadOnly = true;
-            txtMaThuoc.Size = new Size(223, 39);
+            txtMaThuoc.Size = new Size(223, 29);
             txtMaThuoc.TabIndex = 0;
             // 
             // txtTenThuoc
@@ -180,7 +180,7 @@
             txtTenThuoc.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtTenThuoc.Location = new Point(149, 140);
             txtTenThuoc.Name = "txtTenThuoc";
-            txtTenThuoc.Size = new Size(223, 39);
+            txtTenThuoc.Size = new Size(223, 29);
             txtTenThuoc.TabIndex = 1;
             txtTenThuoc.TextChanged += txtTenThuoc_TextChanged;
             // 
@@ -189,7 +189,7 @@
             txtGiaBan.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtGiaBan.Location = new Point(149, 394);
             txtGiaBan.Name = "txtGiaBan";
-            txtGiaBan.Size = new Size(223, 39);
+            txtGiaBan.Size = new Size(223, 29);
             txtGiaBan.TabIndex = 4;
             txtGiaBan.TextChanged += txtGiaBan_TextChanged;
             // 
@@ -209,7 +209,7 @@
             dgvDanhSachLoaiThuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvDanhSachLoaiThuoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDanhSachLoaiThuoc.Dock = DockStyle.Fill;
-            dgvDanhSachLoaiThuoc.Location = new Point(3, 31);
+            dgvDanhSachLoaiThuoc.Location = new Point(3, 22);
             dgvDanhSachLoaiThuoc.Name = "dgvDanhSachLoaiThuoc";
             dgvDanhSachLoaiThuoc.ReadOnly = true;
             dgvDanhSachLoaiThuoc.RowHeadersWidth = 51;
@@ -219,7 +219,7 @@
             dgvDanhSachLoaiThuoc.RowTemplate.DefaultCellStyle.SelectionForeColor = SystemColors.Window;
             dgvDanhSachLoaiThuoc.RowTemplate.Height = 25;
             dgvDanhSachLoaiThuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDanhSachLoaiThuoc.Size = new Size(761, 678);
+            dgvDanhSachLoaiThuoc.Size = new Size(761, 687);
             dgvDanhSachLoaiThuoc.TabIndex = 0;
             dgvDanhSachLoaiThuoc.CellClick += dgvDanhSachLoaiThuoc_CellClick;
             dgvDanhSachLoaiThuoc.CellContentClick += dgvDanhSachLoaiThuoc_CellContentClick;
@@ -230,7 +230,7 @@
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.Location = new Point(19, 311);
             label6.Name = "label6";
-            label6.Size = new Size(138, 32);
+            label6.Size = new Size(93, 21);
             label6.TabIndex = 14;
             label6.Text = "Cách Dùng";
             // 
@@ -254,7 +254,7 @@
             cboDonVi.FormattingEnabled = true;
             cboDonVi.Location = new Point(149, 227);
             cboDonVi.Name = "cboDonVi";
-            cboDonVi.Size = new Size(223, 40);
+            cboDonVi.Size = new Size(223, 29);
             cboDonVi.TabIndex = 16;
             // 
             // cboCachDung
@@ -263,7 +263,7 @@
             cboCachDung.FormattingEnabled = true;
             cboCachDung.Location = new Point(149, 310);
             cboCachDung.Name = "cboCachDung";
-            cboCachDung.Size = new Size(223, 40);
+            cboCachDung.Size = new Size(223, 29);
             cboCachDung.TabIndex = 17;
             // 
             // errorProvider
@@ -286,8 +286,9 @@
             // 
             // frmQuanLyThuoc
             // 
-            AutoScaleDimensions = new SizeF(11F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(1182, 770);
             Controls.Add(btnNhapThuoc);

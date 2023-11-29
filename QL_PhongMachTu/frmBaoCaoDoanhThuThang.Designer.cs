@@ -168,6 +168,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             ClientSize = new Size(922, 460);
             ControlBox = false;
             Controls.Add(btnThoat);

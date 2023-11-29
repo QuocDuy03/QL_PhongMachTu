@@ -265,6 +265,7 @@ namespace QL_PhongMachTu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
             ClientSize = new Size(651, 475);
             ControlBox = false;
