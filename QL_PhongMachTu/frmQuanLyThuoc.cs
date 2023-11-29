@@ -157,6 +157,18 @@ namespace QL_PhongMachTu
             txtMaThuoc.Text = Thuoc.getAutoId();
             txtMaThuoc.PlaceholderText = Thuoc.getAutoId();
             txtTenThuoc.Focus();
+           
+                // khi load form tùy loại người dùng để ẩn hiện các chức năng 
+                // user thường không được dùng chức năng LapPhieuNhapThuoc
+                if (TaiKhoan.loaiTaiKhoan == 2)
+                {
+
+                btnNhapThuoc.Enabled = false;
+                btnNhapThuoc.ForeColor = Color.White;
+                btnNhapThuoc.BackColor = Color.LightSlateGray;
+                }
+               
+            
         }
 
         private void dgvDanhSachLoaiThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
