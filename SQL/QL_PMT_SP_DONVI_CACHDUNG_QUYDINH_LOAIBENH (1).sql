@@ -77,7 +77,7 @@ begin
 end
 go
 
-alter PROC spCheckCachDung_Sua
+create PROC spCheckCachDung_Sua
 @TenCachDung Nvarchar(40)
 as
 begin
@@ -142,7 +142,7 @@ end
 go
 
 --Sửa Tham Số
-ALTER proc spSuaThamSo
+create proc spSuaThamSo
 @TenThamSo nvarchar(40),
 @GiaTri int
 as

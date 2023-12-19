@@ -25,7 +25,7 @@ begin
 	begin
 		set @month = '0'+CONVERT(char(1), @Thang)
 	end
-	SELECT CONVERT(char(2), Ngay)+'/'+@month+'/'+CONVERT(char(4), @Nam) as N'Ngày' , SoBenhNhan as N'Số bệnh nhân', DoanhThu as N'Doanh thu', TyLe*100 as N'Tỷ lệ(%)'
+	SELECT CONVERT(char(2), Ngay) + '/' + CONVERT(char(2),  @Thang) + '/' + CONVERT(char(4),  @Nam) as N'Ngày' , SoBenhNhan as N'Số bệnh nhân', DoanhThu as N'Doanh thu', TyLe*100 as N'Tỷ lệ(%)'
 	FROM CT_BAOCAODOANHTHU 
 	WHERE Thang = @Thang and Nam = @Nam
 	order by Ngay ASC

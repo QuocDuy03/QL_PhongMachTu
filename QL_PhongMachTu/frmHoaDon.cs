@@ -73,7 +73,7 @@ namespace QL_PhongMachTu
         }
 
         private void btnDong_Click(object sender, EventArgs e)
-        {           
+        {
             this.Close();
         }
 
@@ -81,7 +81,7 @@ namespace QL_PhongMachTu
         {
             // sự kiện thanh toán hóa đơn và xử lí lưu dữ liệu vào database 
             DialogResult res = MessageBox.Show("Xác nhận thanh toán", "Xác nhận", MessageBoxButtons.OKCancel);
-            if(res == DialogResult.OK)
+            if (res == DialogResult.OK)
             {
                 // lưu dữ liệu xuống database 
                 SqlConnection con = Connection.getConnection();
@@ -102,7 +102,7 @@ namespace QL_PhongMachTu
                 {
                     cmd.ExecuteNonQuery();
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Thanh toán không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     con.Close();
@@ -129,7 +129,7 @@ namespace QL_PhongMachTu
                 MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.parrentFrom.loadDanhSachPhieuKham();
                 this.Close();
-            }    
+            }
         }
     }
 }

@@ -47,10 +47,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(524, 11);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(367, 7);
             label1.Name = "label1";
-            label1.Size = new Size(0, 25);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 0;
             // 
             // lblTitle
@@ -58,10 +57,9 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
             lblTitle.ForeColor = SystemColors.MenuHighlight;
-            lblTitle.Location = new Point(39, 15);
-            lblTitle.Margin = new Padding(4, 0, 4, 0);
+            lblTitle.Location = new Point(27, 9);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(0, 65);
+            lblTitle.Size = new Size(0, 45);
             lblTitle.TabIndex = 1;
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -73,10 +71,10 @@
             panel1.Controls.Add(txtUsername);
             panel1.Controls.Add(lblPassword);
             panel1.Controls.Add(lblUserName);
-            panel1.Location = new Point(141, 178);
-            panel1.Margin = new Padding(4);
+            panel1.Location = new Point(99, 107);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(766, 312);
+            panel1.Size = new Size(536, 187);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -84,10 +82,10 @@
             // 
             chkShowPassword.AutoSize = true;
             chkShowPassword.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            chkShowPassword.Location = new Point(244, 258);
-            chkShowPassword.Margin = new Padding(4);
+            chkShowPassword.Location = new Point(171, 155);
+            chkShowPassword.Margin = new Padding(3, 2, 3, 2);
             chkShowPassword.Name = "chkShowPassword";
-            chkShowPassword.Size = new Size(209, 34);
+            chkShowPassword.Size = new Size(140, 23);
             chkShowPassword.TabIndex = 2;
             chkShowPassword.Text = "Hiển thị mật khẩu";
             chkShowPassword.UseVisualStyleBackColor = true;
@@ -97,31 +95,30 @@
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
             txtPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(244, 188);
-            txtPassword.Margin = new Padding(4);
+            txtPassword.Location = new Point(171, 113);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(473, 44);
+            txtPassword.Size = new Size(332, 32);
             txtPassword.TabIndex = 1;
             // 
             // txtUsername
             // 
             txtUsername.BorderStyle = BorderStyle.FixedSingle;
             txtUsername.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(244, 80);
-            txtUsername.Margin = new Padding(4);
+            txtUsername.Location = new Point(171, 48);
+            txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(473, 44);
+            txtUsername.Size = new Size(332, 32);
             txtUsername.TabIndex = 0;
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
             lblPassword.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPassword.Location = new Point(40, 192);
-            lblPassword.Margin = new Padding(4, 0, 4, 0);
+            lblPassword.Location = new Point(28, 115);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(128, 32);
+            lblPassword.Size = new Size(86, 21);
             lblPassword.TabIndex = 1;
             lblPassword.Text = "Mật khẩu:";
             // 
@@ -129,10 +126,9 @@
             // 
             lblUserName.AutoSize = true;
             lblUserName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUserName.Location = new Point(40, 85);
-            lblUserName.Margin = new Padding(4, 0, 4, 0);
+            lblUserName.Location = new Point(28, 51);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(190, 32);
+            lblUserName.Size = new Size(127, 21);
             lblUserName.TabIndex = 0;
             lblUserName.Text = "Tên đăng nhập:";
             // 
@@ -141,10 +137,10 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.ImageLocation = "";
-            pictureBox1.Location = new Point(419, 9);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(293, 5);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(165, 165);
+            pictureBox1.Size = new Size(116, 99);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -156,10 +152,10 @@
             btnExit.Cursor = Cursors.Hand;
             btnExit.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = Color.White;
-            btnExit.Location = new Point(565, 514);
-            btnExit.Margin = new Padding(4);
+            btnExit.Location = new Point(396, 308);
+            btnExit.Margin = new Padding(3, 2, 3, 2);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(218, 60);
+            btnExit.Size = new Size(153, 36);
             btnExit.TabIndex = 4;
             btnExit.Text = "Thoát";
             btnExit.UseVisualStyleBackColor = false;
@@ -171,10 +167,10 @@
             btnLogin.Cursor = Cursors.Hand;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(289, 514);
-            btnLogin.Margin = new Padding(4);
+            btnLogin.Location = new Point(202, 308);
+            btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(221, 60);
+            btnLogin.Size = new Size(155, 36);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "Đăng nhập";
             btnLogin.UseVisualStyleBackColor = false;
@@ -182,10 +178,11 @@
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.White;
-            ClientSize = new Size(1039, 598);
+            ClientSize = new Size(727, 359);
             ControlBox = false;
             Controls.Add(btnLogin);
             Controls.Add(pictureBox1);
@@ -194,7 +191,7 @@
             Controls.Add(lblTitle);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;

@@ -43,6 +43,7 @@ begin
 	SET MatKhau = @MatKhau , MaNhom = @MaNhom
 	WHERE TenDangNhap = @TenDangNhap
 end
+go
 
 -- Thêm một tài khoản mới (admin)
 CREATE PROC spAddNewAccount
@@ -53,6 +54,7 @@ as
 begin
 	insert into NGUOIDUNG(TenDangNhap, MatKhau , MaNhom) values(@TenDangNhap, @MatKhau, @MaNhom);
 end
+go
 
 -- Xóa một tài khỏa (admin)
 CREATE PROC spDeleteAccount
@@ -62,6 +64,7 @@ begin
 	DELETE FROM NGUOIDUNG
 	WHERE TenDangNhap = @TenDangNhap;
 end
+go
 
 -- Lấy ra danh sách tất cả các tài khoản hiện tại có trong hệ thống 
 CREATE PROC spGetAllAccount

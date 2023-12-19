@@ -250,7 +250,7 @@ namespace QL_PhongMachTu
                     {
 
                         cmd.Parameters.AddWithValue("@MaPN", txtMaPhieuNhapThuoc.Text.Trim());
-                        cmd.Parameters.AddWithValue("@NgayLap", Convert.ToDateTime(dtpNgayLapPhieu.Text));
+                        cmd.Parameters.AddWithValue("@NgayLap", Convert.ToDateTime(dtpNgayLapPhieu.Value));
                         cmd.Parameters.AddWithValue("@TongTien", Convert.ToInt32(txtTongTien.Text));
                         cmd.ExecuteNonQuery();
                     }
@@ -260,15 +260,9 @@ namespace QL_PhongMachTu
                         return;
                     }
 
-                    // nếu phiếu hợp lệ thì thêm thông tin các chi tiết nhập thuốc vào bảng chi tiết
+                    //nếu phiếu hợp lệ thì thêm thông tin các chi tiết nhập thuốc vào bảng chi tiết
                     cmd.Parameters.Clear();
                     cmd.CommandText = "spAddChiTietPhieuNhapThuoc";
-                    SqlCommand cmd1 = new SqlCommand()
-                    {
-                        Connection = con,
-                        CommandType = CommandType.StoredProcedure,
-                        CommandText = "spUpdateLoaiThuocKhiNhap",
-                    };
 
                     for (int i = 0; i < chiTietPN.Count; i++)
                     {
@@ -276,13 +270,8 @@ namespace QL_PhongMachTu
                         cmd.Parameters.AddWithValue("@MaLT", chiTietPN[i].maLoaiThuoc);
                         cmd.Parameters.AddWithValue("@SoLuong", chiTietPN[i].soLuong);
                         cmd.Parameters.AddWithValue("@DonGiaNhap", chiTietPN[i].donGiaNhap);
-                        cmd1.Parameters.AddWithValue("@MaLT", chiTietPN[i].maLoaiThuoc);
-                        cmd1.Parameters.AddWithValue("@SoLuongNhap", chiTietPN[i].soLuong);
-                        cmd1.Parameters.AddWithValue("@DonGiaNhap", chiTietPN[i].donGiaNhap);
                         cmd.ExecuteNonQuery();
-                        cmd1.ExecuteNonQuery();
                         cmd.Parameters.Clear();
-                        cmd1.Parameters.Clear();
                     }
 
                     con.Close();

@@ -50,11 +50,11 @@
             // 
             gbxLoaiBenh.Controls.Add(dtvLoaiBenh);
             gbxLoaiBenh.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            gbxLoaiBenh.Location = new Point(15, 256);
-            gbxLoaiBenh.Margin = new Padding(4);
+            gbxLoaiBenh.Location = new Point(10, 154);
+            gbxLoaiBenh.Margin = new Padding(3, 2, 3, 2);
             gbxLoaiBenh.Name = "gbxLoaiBenh";
-            gbxLoaiBenh.Padding = new Padding(4);
-            gbxLoaiBenh.Size = new Size(581, 319);
+            gbxLoaiBenh.Padding = new Padding(3, 2, 3, 2);
+            gbxLoaiBenh.Size = new Size(407, 191);
             gbxLoaiBenh.TabIndex = 23;
             gbxLoaiBenh.TabStop = false;
             gbxLoaiBenh.Text = "Danh Sách Loại Bệnh";
@@ -65,8 +65,8 @@
             dtvLoaiBenh.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtvLoaiBenh.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtvLoaiBenh.Dock = DockStyle.Fill;
-            dtvLoaiBenh.Location = new Point(4, 32);
-            dtvLoaiBenh.Margin = new Padding(4);
+            dtvLoaiBenh.Location = new Point(3, 21);
+            dtvLoaiBenh.Margin = new Padding(3, 2, 3, 2);
             dtvLoaiBenh.Name = "dtvLoaiBenh";
             dtvLoaiBenh.ReadOnly = true;
             dtvLoaiBenh.RowHeadersWidth = 51;
@@ -75,7 +75,7 @@
             dtvLoaiBenh.RowTemplate.DefaultCellStyle.SelectionForeColor = SystemColors.Window;
             dtvLoaiBenh.RowTemplate.Height = 29;
             dtvLoaiBenh.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtvLoaiBenh.Size = new Size(573, 283);
+            dtvLoaiBenh.Size = new Size(401, 168);
             dtvLoaiBenh.TabIndex = 0;
             dtvLoaiBenh.CellClick += dtvLoaiBenh_CellClick;
             // 
@@ -85,10 +85,10 @@
             btnThoat.Cursor = Cursors.Hand;
             btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(608, 512);
-            btnThoat.Margin = new Padding(4);
+            btnThoat.Location = new Point(426, 307);
+            btnThoat.Margin = new Padding(3, 2, 3, 2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(350, 59);
+            btnThoat.Size = new Size(245, 35);
             btnThoat.TabIndex = 22;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
@@ -100,10 +100,10 @@
             btnSua.Cursor = Cursors.Hand;
             btnSua.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(608, 415);
-            btnSua.Margin = new Padding(4);
+            btnSua.Location = new Point(426, 249);
+            btnSua.Margin = new Padding(3, 2, 3, 2);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(160, 74);
+            btnSua.Size = new Size(112, 44);
             btnSua.TabIndex = 21;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
@@ -115,10 +115,10 @@
             btnXoa.Cursor = Cursors.Hand;
             btnXoa.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(798, 319);
-            btnXoa.Margin = new Padding(4);
+            btnXoa.Location = new Point(559, 191);
+            btnXoa.Margin = new Padding(3, 2, 3, 2);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(160, 74);
+            btnXoa.Size = new Size(112, 44);
             btnXoa.TabIndex = 20;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
@@ -130,10 +130,10 @@
             btnThem.Cursor = Cursors.Hand;
             btnThem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(608, 319);
-            btnThem.Margin = new Padding(4);
+            btnThem.Location = new Point(426, 191);
+            btnThem.Margin = new Padding(3, 2, 3, 2);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(160, 74);
+            btnThem.Size = new Size(112, 44);
             btnThem.TabIndex = 19;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
@@ -146,9 +146,8 @@
             label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(969, 58);
+            label1.Size = new Size(678, 35);
             label1.TabIndex = 18;
             label1.Text = "Quản Lý Loại Bệnh";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -161,11 +160,11 @@
             groupBox1.Controls.Add(txtMaLoaiBenh);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(15, 74);
-            groupBox1.Margin = new Padding(4);
+            groupBox1.Location = new Point(10, 44);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(934, 186);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(654, 112);
             groupBox1.TabIndex = 24;
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập Loại Bệnh";
@@ -174,31 +173,30 @@
             // 
             txtTenLoaiBenh.BackColor = Color.White;
             txtTenLoaiBenh.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTenLoaiBenh.Location = new Point(569, 110);
-            txtTenLoaiBenh.Margin = new Padding(4);
+            txtTenLoaiBenh.Location = new Point(398, 66);
+            txtTenLoaiBenh.Margin = new Padding(3, 2, 3, 2);
             txtTenLoaiBenh.Name = "txtTenLoaiBenh";
-            txtTenLoaiBenh.Size = new Size(288, 39);
+            txtTenLoaiBenh.Size = new Size(203, 29);
             txtTenLoaiBenh.TabIndex = 3;
             // 
             // txtMaLoaiBenh
             // 
             txtMaLoaiBenh.BackColor = SystemColors.ControlLight;
             txtMaLoaiBenh.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtMaLoaiBenh.Location = new Point(39, 110);
-            txtMaLoaiBenh.Margin = new Padding(4);
+            txtMaLoaiBenh.Location = new Point(27, 66);
+            txtMaLoaiBenh.Margin = new Padding(3, 2, 3, 2);
             txtMaLoaiBenh.Name = "txtMaLoaiBenh";
             txtMaLoaiBenh.ReadOnly = true;
-            txtMaLoaiBenh.Size = new Size(288, 39);
+            txtMaLoaiBenh.Size = new Size(203, 29);
             txtMaLoaiBenh.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(569, 44);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(398, 26);
             label3.Name = "label3";
-            label3.Size = new Size(199, 38);
+            label3.Size = new Size(135, 25);
             label3.TabIndex = 1;
             label3.Text = "Tên Loại Bệnh";
             // 
@@ -206,10 +204,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(39, 44);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(27, 26);
             label2.Name = "label2";
-            label2.Size = new Size(196, 38);
+            label2.Size = new Size(132, 25);
             label2.TabIndex = 0;
             label2.Text = "Mã Loại Bệnh";
             // 
@@ -219,10 +216,10 @@
             btnReset.Cursor = Cursors.Hand;
             btnReset.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(798, 415);
-            btnReset.Margin = new Padding(4);
+            btnReset.Location = new Point(559, 249);
+            btnReset.Margin = new Padding(3, 2, 3, 2);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(160, 74);
+            btnReset.Size = new Size(112, 44);
             btnReset.TabIndex = 25;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
@@ -230,9 +227,10 @@
             // 
             // frmLoaiBenh
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(969, 590);
+            AutoSize = true;
+            ClientSize = new Size(678, 354);
             ControlBox = false;
             Controls.Add(btnReset);
             Controls.Add(gbxLoaiBenh);
@@ -243,7 +241,7 @@
             Controls.Add(label1);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "frmLoaiBenh";
             StartPosition = FormStartPosition.CenterScreen;

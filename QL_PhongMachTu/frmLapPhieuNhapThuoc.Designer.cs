@@ -76,9 +76,8 @@
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(1319, 72);
+            label1.Size = new Size(923, 43);
             label1.TabIndex = 0;
             label1.Text = "Lập Phiếu Nhập Thuốc";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -93,71 +92,68 @@
             grbThongTinPhieuLapThuoc.Controls.Add(lblNgayLap);
             grbThongTinPhieuLapThuoc.Controls.Add(lblMaPhieuNhapThuoc);
             grbThongTinPhieuLapThuoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            grbThongTinPhieuLapThuoc.Location = new Point(8, 89);
-            grbThongTinPhieuLapThuoc.Margin = new Padding(4);
+            grbThongTinPhieuLapThuoc.Location = new Point(6, 53);
+            grbThongTinPhieuLapThuoc.Margin = new Padding(3, 2, 3, 2);
             grbThongTinPhieuLapThuoc.Name = "grbThongTinPhieuLapThuoc";
-            grbThongTinPhieuLapThuoc.Padding = new Padding(4);
-            grbThongTinPhieuLapThuoc.Size = new Size(951, 162);
+            grbThongTinPhieuLapThuoc.Padding = new Padding(3, 2, 3, 2);
+            grbThongTinPhieuLapThuoc.Size = new Size(666, 97);
             grbThongTinPhieuLapThuoc.TabIndex = 1;
             grbThongTinPhieuLapThuoc.TabStop = false;
             grbThongTinPhieuLapThuoc.Text = "Thông Tin Phiếu Nhập Thuốc";
             // 
             // txtTongTien
             // 
-            txtTongTien.Location = new Point(648, 84);
-            txtTongTien.Margin = new Padding(4);
+            txtTongTien.Location = new Point(454, 50);
+            txtTongTien.Margin = new Padding(3, 2, 3, 2);
             txtTongTien.Name = "txtTongTien";
             txtTongTien.ReadOnly = true;
-            txtTongTien.Size = new Size(226, 35);
+            txtTongTien.Size = new Size(159, 26);
             txtTongTien.TabIndex = 5;
             // 
             // dtpNgayLapPhieu
             // 
             dtpNgayLapPhieu.CustomFormat = "dd/MM/yyyy";
             dtpNgayLapPhieu.Format = DateTimePickerFormat.Custom;
-            dtpNgayLapPhieu.Location = new Point(306, 84);
-            dtpNgayLapPhieu.Margin = new Padding(4);
+            dtpNgayLapPhieu.Location = new Point(214, 50);
+            dtpNgayLapPhieu.Margin = new Padding(3, 2, 3, 2);
             dtpNgayLapPhieu.Name = "dtpNgayLapPhieu";
-            dtpNgayLapPhieu.Size = new Size(300, 35);
+            dtpNgayLapPhieu.Size = new Size(211, 26);
             dtpNgayLapPhieu.TabIndex = 4;
             // 
             // txtMaPhieuNhapThuoc
             // 
             txtMaPhieuNhapThuoc.BackColor = SystemColors.ControlLight;
-            txtMaPhieuNhapThuoc.Location = new Point(16, 84);
-            txtMaPhieuNhapThuoc.Margin = new Padding(4);
+            txtMaPhieuNhapThuoc.Location = new Point(11, 50);
+            txtMaPhieuNhapThuoc.Margin = new Padding(3, 2, 3, 2);
             txtMaPhieuNhapThuoc.Name = "txtMaPhieuNhapThuoc";
             txtMaPhieuNhapThuoc.ReadOnly = true;
-            txtMaPhieuNhapThuoc.Size = new Size(245, 35);
+            txtMaPhieuNhapThuoc.Size = new Size(173, 26);
             txtMaPhieuNhapThuoc.TabIndex = 3;
             // 
             // lblTongTien
             // 
             lblTongTien.AutoSize = true;
-            lblTongTien.Location = new Point(648, 51);
-            lblTongTien.Margin = new Padding(4, 0, 4, 0);
+            lblTongTien.Location = new Point(454, 31);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(109, 30);
+            lblTongTien.Size = new Size(72, 19);
             lblTongTien.TabIndex = 2;
             lblTongTien.Text = "Tổng Tiền";
             // 
             // lblNgayLap
             // 
             lblNgayLap.AutoSize = true;
-            lblNgayLap.Location = new Point(306, 51);
-            lblNgayLap.Margin = new Padding(4, 0, 4, 0);
+            lblNgayLap.Location = new Point(214, 31);
             lblNgayLap.Name = "lblNgayLap";
-            lblNgayLap.Size = new Size(162, 30);
+            lblNgayLap.Size = new Size(107, 19);
             lblNgayLap.TabIndex = 1;
             lblNgayLap.Text = "Ngày Lập Phiếu";
             // 
             // lblMaPhieuNhapThuoc
             // 
             lblMaPhieuNhapThuoc.AutoSize = true;
-            lblMaPhieuNhapThuoc.Location = new Point(16, 51);
-            lblMaPhieuNhapThuoc.Margin = new Padding(4, 0, 4, 0);
+            lblMaPhieuNhapThuoc.Location = new Point(11, 31);
             lblMaPhieuNhapThuoc.Name = "lblMaPhieuNhapThuoc";
-            lblMaPhieuNhapThuoc.Size = new Size(101, 30);
+            lblMaPhieuNhapThuoc.Size = new Size(68, 19);
             lblMaPhieuNhapThuoc.TabIndex = 0;
             lblMaPhieuNhapThuoc.Text = "Mã Phiếu";
             // 
@@ -170,82 +166,79 @@
             grbThongTinThuoc.Controls.Add(lblTenThuoc);
             grbThongTinThuoc.Controls.Add(cboTenThuoc);
             grbThongTinThuoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            grbThongTinThuoc.Location = new Point(10, 259);
-            grbThongTinThuoc.Margin = new Padding(4);
+            grbThongTinThuoc.Location = new Point(7, 155);
+            grbThongTinThuoc.Margin = new Padding(3, 2, 3, 2);
             grbThongTinThuoc.Name = "grbThongTinThuoc";
-            grbThongTinThuoc.Padding = new Padding(4);
-            grbThongTinThuoc.Size = new Size(949, 189);
+            grbThongTinThuoc.Padding = new Padding(3, 2, 3, 2);
+            grbThongTinThuoc.Size = new Size(664, 113);
             grbThongTinThuoc.TabIndex = 2;
             grbThongTinThuoc.TabStop = false;
             grbThongTinThuoc.Text = "Thông Tin Loại Thuốc";
             // 
             // txtDonGiaNhap
             // 
-            txtDonGiaNhap.Location = new Point(645, 102);
-            txtDonGiaNhap.Margin = new Padding(4);
+            txtDonGiaNhap.Location = new Point(452, 61);
+            txtDonGiaNhap.Margin = new Padding(3, 2, 3, 2);
             txtDonGiaNhap.Name = "txtDonGiaNhap";
-            txtDonGiaNhap.Size = new Size(226, 35);
+            txtDonGiaNhap.Size = new Size(159, 26);
             txtDonGiaNhap.TabIndex = 5;
             txtDonGiaNhap.TextChanged += txtDonGiaNhap_TextChanged;
             // 
             // lblDonGiaNhap
             // 
             lblDonGiaNhap.AutoSize = true;
-            lblDonGiaNhap.Location = new Point(645, 69);
-            lblDonGiaNhap.Margin = new Padding(4, 0, 4, 0);
+            lblDonGiaNhap.Location = new Point(452, 41);
             lblDonGiaNhap.Name = "lblDonGiaNhap";
-            lblDonGiaNhap.Size = new Size(148, 30);
+            lblDonGiaNhap.Size = new Size(99, 19);
             lblDonGiaNhap.TabIndex = 4;
             lblDonGiaNhap.Text = "Đơn Giá Nhập";
             // 
             // nudSoLuongNhap
             // 
-            nudSoLuongNhap.Location = new Point(304, 104);
-            nudSoLuongNhap.Margin = new Padding(4);
+            nudSoLuongNhap.Location = new Point(213, 62);
+            nudSoLuongNhap.Margin = new Padding(3, 2, 3, 2);
             nudSoLuongNhap.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             nudSoLuongNhap.Name = "nudSoLuongNhap";
-            nudSoLuongNhap.Size = new Size(301, 35);
+            nudSoLuongNhap.Size = new Size(211, 26);
             nudSoLuongNhap.TabIndex = 3;
             nudSoLuongNhap.ValueChanged += nudSoLuongNhap_ValueChanged;
             // 
             // lblSoLuong
             // 
             lblSoLuong.AutoSize = true;
-            lblSoLuong.Location = new Point(305, 69);
-            lblSoLuong.Margin = new Padding(4, 0, 4, 0);
+            lblSoLuong.Location = new Point(214, 41);
             lblSoLuong.Name = "lblSoLuong";
-            lblSoLuong.Size = new Size(162, 30);
+            lblSoLuong.Size = new Size(108, 19);
             lblSoLuong.TabIndex = 2;
             lblSoLuong.Text = "Số Lượng Nhập";
             // 
             // lblTenThuoc
             // 
             lblTenThuoc.AutoSize = true;
-            lblTenThuoc.Location = new Point(14, 69);
-            lblTenThuoc.Margin = new Padding(4, 0, 4, 0);
+            lblTenThuoc.Location = new Point(10, 41);
             lblTenThuoc.Name = "lblTenThuoc";
-            lblTenThuoc.Size = new Size(111, 30);
+            lblTenThuoc.Size = new Size(74, 19);
             lblTenThuoc.TabIndex = 1;
             lblTenThuoc.Text = "Tên Thuốc";
             // 
             // cboTenThuoc
             // 
             cboTenThuoc.FormattingEnabled = true;
-            cboTenThuoc.Location = new Point(14, 104);
-            cboTenThuoc.Margin = new Padding(4);
+            cboTenThuoc.Location = new Point(10, 62);
+            cboTenThuoc.Margin = new Padding(3, 2, 3, 2);
             cboTenThuoc.Name = "cboTenThuoc";
-            cboTenThuoc.Size = new Size(245, 36);
+            cboTenThuoc.Size = new Size(173, 27);
             cboTenThuoc.TabIndex = 0;
             // 
             // grbDanhSachPhieuNhapThuoc
             // 
             grbDanhSachPhieuNhapThuoc.Controls.Add(dgvDanhSachPhieuNhapThuoc);
             grbDanhSachPhieuNhapThuoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            grbDanhSachPhieuNhapThuoc.Location = new Point(10, 455);
-            grbDanhSachPhieuNhapThuoc.Margin = new Padding(4);
+            grbDanhSachPhieuNhapThuoc.Location = new Point(7, 273);
+            grbDanhSachPhieuNhapThuoc.Margin = new Padding(3, 2, 3, 2);
             grbDanhSachPhieuNhapThuoc.Name = "grbDanhSachPhieuNhapThuoc";
-            grbDanhSachPhieuNhapThuoc.Padding = new Padding(4);
-            grbDanhSachPhieuNhapThuoc.Size = new Size(564, 410);
+            grbDanhSachPhieuNhapThuoc.Padding = new Padding(3, 2, 3, 2);
+            grbDanhSachPhieuNhapThuoc.Size = new Size(395, 246);
             grbDanhSachPhieuNhapThuoc.TabIndex = 3;
             grbDanhSachPhieuNhapThuoc.TabStop = false;
             grbDanhSachPhieuNhapThuoc.Text = "Danh Sách Phiếu Nhập Thuốc";
@@ -255,8 +248,8 @@
             dgvDanhSachPhieuNhapThuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvDanhSachPhieuNhapThuoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDanhSachPhieuNhapThuoc.Dock = DockStyle.Fill;
-            dgvDanhSachPhieuNhapThuoc.Location = new Point(4, 32);
-            dgvDanhSachPhieuNhapThuoc.Margin = new Padding(4);
+            dgvDanhSachPhieuNhapThuoc.Location = new Point(3, 21);
+            dgvDanhSachPhieuNhapThuoc.Margin = new Padding(3, 2, 3, 2);
             dgvDanhSachPhieuNhapThuoc.Name = "dgvDanhSachPhieuNhapThuoc";
             dgvDanhSachPhieuNhapThuoc.ReadOnly = true;
             dgvDanhSachPhieuNhapThuoc.RowHeadersWidth = 51;
@@ -266,7 +259,7 @@
             dgvDanhSachPhieuNhapThuoc.RowTemplate.DefaultCellStyle.SelectionForeColor = SystemColors.Window;
             dgvDanhSachPhieuNhapThuoc.RowTemplate.Height = 29;
             dgvDanhSachPhieuNhapThuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDanhSachPhieuNhapThuoc.Size = new Size(556, 374);
+            dgvDanhSachPhieuNhapThuoc.Size = new Size(389, 223);
             dgvDanhSachPhieuNhapThuoc.TabIndex = 0;
             dgvDanhSachPhieuNhapThuoc.CellContentClick += dgvDanhSachPhieuNhapThuoc_CellContentClick;
             // 
@@ -274,11 +267,11 @@
             // 
             grbDanhSachThuoc.Controls.Add(dgvDanhSachThuoc);
             grbDanhSachThuoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            grbDanhSachThuoc.Location = new Point(590, 455);
-            grbDanhSachThuoc.Margin = new Padding(4);
+            grbDanhSachThuoc.Location = new Point(413, 273);
+            grbDanhSachThuoc.Margin = new Padding(3, 2, 3, 2);
             grbDanhSachThuoc.Name = "grbDanhSachThuoc";
-            grbDanhSachThuoc.Padding = new Padding(4);
-            grbDanhSachThuoc.Size = new Size(709, 410);
+            grbDanhSachThuoc.Padding = new Padding(3, 2, 3, 2);
+            grbDanhSachThuoc.Size = new Size(496, 246);
             grbDanhSachThuoc.TabIndex = 4;
             grbDanhSachThuoc.TabStop = false;
             grbDanhSachThuoc.Text = "Danh Sách Thuốc";
@@ -289,8 +282,8 @@
             dgvDanhSachThuoc.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvDanhSachThuoc.Columns.AddRange(new DataGridViewColumn[] { LoaiThuoc, SoLuongNhap, DonGiaNhap });
             dgvDanhSachThuoc.Dock = DockStyle.Fill;
-            dgvDanhSachThuoc.Location = new Point(4, 32);
-            dgvDanhSachThuoc.Margin = new Padding(4);
+            dgvDanhSachThuoc.Location = new Point(3, 21);
+            dgvDanhSachThuoc.Margin = new Padding(3, 2, 3, 2);
             dgvDanhSachThuoc.Name = "dgvDanhSachThuoc";
             dgvDanhSachThuoc.ReadOnly = true;
             dgvDanhSachThuoc.RowHeadersWidth = 51;
@@ -300,7 +293,7 @@
             dgvDanhSachThuoc.RowTemplate.DefaultCellStyle.SelectionForeColor = SystemColors.Window;
             dgvDanhSachThuoc.RowTemplate.Height = 29;
             dgvDanhSachThuoc.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDanhSachThuoc.Size = new Size(701, 374);
+            dgvDanhSachThuoc.Size = new Size(490, 223);
             dgvDanhSachThuoc.TabIndex = 0;
             dgvDanhSachThuoc.CellClick += dgvDanhSachThuoc_CellClick;
             dgvDanhSachThuoc.CellContentClick += dgvDanhSachThuoc_CellContentClick;
@@ -332,10 +325,10 @@
             btnLapPhieu.Cursor = Cursors.Hand;
             btnLapPhieu.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnLapPhieu.ForeColor = Color.White;
-            btnLapPhieu.Location = new Point(988, 400);
-            btnLapPhieu.Margin = new Padding(4);
+            btnLapPhieu.Location = new Point(692, 240);
+            btnLapPhieu.Margin = new Padding(3, 2, 3, 2);
             btnLapPhieu.Name = "btnLapPhieu";
-            btnLapPhieu.Size = new Size(311, 48);
+            btnLapPhieu.Size = new Size(218, 29);
             btnLapPhieu.TabIndex = 5;
             btnLapPhieu.Text = "Lập Phiếu";
             btnLapPhieu.UseVisualStyleBackColor = false;
@@ -347,10 +340,10 @@
             btnThoat.Cursor = Cursors.Hand;
             btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(82, 888);
-            btnThoat.Margin = new Padding(4);
+            btnThoat.Location = new Point(57, 533);
+            btnThoat.Margin = new Padding(3, 2, 3, 2);
             btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(485, 61);
+            btnThoat.Size = new Size(340, 37);
             btnThoat.TabIndex = 6;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
@@ -362,10 +355,10 @@
             btnThem.Cursor = Cursors.Hand;
             btnThem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(988, 250);
-            btnThem.Margin = new Padding(4);
+            btnThem.Location = new Point(692, 150);
+            btnThem.Margin = new Padding(3, 2, 3, 2);
             btnThem.Name = "btnThem";
-            btnThem.Size = new Size(140, 51);
+            btnThem.Size = new Size(98, 31);
             btnThem.TabIndex = 7;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
@@ -377,10 +370,10 @@
             btnSua.Cursor = Cursors.Hand;
             btnSua.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(988, 328);
-            btnSua.Margin = new Padding(4);
+            btnSua.Location = new Point(692, 197);
+            btnSua.Margin = new Padding(3, 2, 3, 2);
             btnSua.Name = "btnSua";
-            btnSua.Size = new Size(140, 51);
+            btnSua.Size = new Size(98, 31);
             btnSua.TabIndex = 9;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
@@ -392,10 +385,10 @@
             btnReset.Cursor = Cursors.Hand;
             btnReset.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnReset.ForeColor = Color.White;
-            btnReset.Location = new Point(1159, 329);
-            btnReset.Margin = new Padding(4);
+            btnReset.Location = new Point(811, 197);
+            btnReset.Margin = new Padding(3, 2, 3, 2);
             btnReset.Name = "btnReset";
-            btnReset.Size = new Size(140, 51);
+            btnReset.Size = new Size(98, 31);
             btnReset.TabIndex = 10;
             btnReset.Text = "Reset";
             btnReset.UseVisualStyleBackColor = false;
@@ -407,10 +400,10 @@
             btnXemThongTinThuoc.Cursor = Cursors.Hand;
             btnXemThongTinThuoc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnXemThongTinThuoc.ForeColor = Color.White;
-            btnXemThongTinThuoc.Location = new Point(740, 888);
-            btnXemThongTinThuoc.Margin = new Padding(4);
+            btnXemThongTinThuoc.Location = new Point(518, 533);
+            btnXemThongTinThuoc.Margin = new Padding(3, 2, 3, 2);
             btnXemThongTinThuoc.Name = "btnXemThongTinThuoc";
-            btnXemThongTinThuoc.Size = new Size(485, 61);
+            btnXemThongTinThuoc.Size = new Size(340, 37);
             btnXemThongTinThuoc.TabIndex = 11;
             btnXemThongTinThuoc.Text = "Xem Thông Tin Thuốc";
             btnXemThongTinThuoc.UseVisualStyleBackColor = false;
@@ -426,10 +419,10 @@
             btnXoa.Cursor = Cursors.Hand;
             btnXoa.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(1159, 250);
-            btnXoa.Margin = new Padding(4);
+            btnXoa.Location = new Point(811, 150);
+            btnXoa.Margin = new Padding(3, 2, 3, 2);
             btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(140, 51);
+            btnXoa.Size = new Size(98, 31);
             btnXoa.TabIndex = 12;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
@@ -437,9 +430,10 @@
             // 
             // frmLapPhieuNhapThuoc
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1319, 964);
+            AutoSize = true;
+            ClientSize = new Size(923, 578);
             Controls.Add(btnXoa);
             Controls.Add(btnXemThongTinThuoc);
             Controls.Add(btnReset);
@@ -453,7 +447,7 @@
             Controls.Add(grbThongTinPhieuLapThuoc);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "frmLapPhieuNhapThuoc";
             StartPosition = FormStartPosition.CenterScreen;

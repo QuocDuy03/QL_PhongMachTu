@@ -26,6 +26,7 @@ namespace QL_PhongMachTu
             {
                 tipAdmin.Enabled = false;
                 tipLapBaoCao.Enabled = false;
+                lậpPhiếuNhậpThuốcToolStripMenuItem.Enabled = false;
                 btnLapBaoCao.Enabled = false;
                 btnLapBaoCao.ForeColor = Color.White;
                 btnLapBaoCao.BackColor = Color.LightSlateGray;
